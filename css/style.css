@@ -1,7 +1,11 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #333;
   font-family: sans-serif;
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .container {
@@ -11,11 +15,54 @@ body {
 
 nav {
   margin: 0 auto;
+  height: 50px;
   padding: 10px 0 15px 15px;
   position: fixed;
   width: 420px;
+  background-color: #000;
 }
 
 .restaurant-list {
-  padding-top: 50px;
+  padding-top: 10%;
+  background-color: #ccc;
+}
+
+.location {
+  border-bottom: 1px solid #333;
+  height: 80px;
+}
+
+.location:hover {
+  border-bottom: 1px solid #333;
+  height: 80px;
+  background-color: #fff;
+  color: #000;
+}
+
+.content {
+    padding: 25px;
+    display: inline-block;
+}
+
+.content h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-top: 30px;
+  display: inline;
+
+}
+
+.content h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.8em;
+  line-height: 2em;
+}
+
+.arrow {
+  float: right;
+  display: inline-block;
+  height: 80px;
+  line-height: 80px;
+  padding: 12px 25px 0 0;
 }
